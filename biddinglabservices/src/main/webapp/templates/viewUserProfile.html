@@ -1,0 +1,45 @@
+<div ng-controller="profileCtrl">
+
+<br/>
+
+	<h4>User Profile</h4>
+	<hr />
+
+	<br />
+
+	<div style="width: 50%" align="center">
+		<table class="table table-bordered">
+			<tr>
+				<td>User Name</td>
+				<td>{{profile.username}}</td>
+			</tr>
+			<tr>
+				<td>User EmailId</td>
+				<td>{{profile.emailId}}</td>
+			</tr>
+			<tr>
+				<td>Mobile Number</td>
+				<td>{{profile.mobNum}}</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>{{profile.address}}</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+
+					<form>
+						<button class="btn btn-info"
+							onclick="window.location.href='#profile'">
+							<i class="fa fa-user fa-fw"></i> Edit User Info
+						</button>
+					</form>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+
+
+</div>

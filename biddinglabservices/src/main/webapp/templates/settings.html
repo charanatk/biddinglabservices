@@ -1,0 +1,54 @@
+<div ng-controller="settingCtrl" class="container">
+	<p style="height: 50%">
+	<h4>Settings</h4>
+	</p>
+	<hr />
+
+	<div class="panel panel-default" style="width: 40%">
+		<!-- Default panel contents -->
+		<div class="panel-heading">
+			<span class="lead"><h4>Update User Profile Information</h4></span>
+		</div>
+		<div class="tablecontainer">
+			<form ng-submit="updatePassword()">
+				<table class="table">
+					<tr> 
+						<td><div class="form-group input-group">
+						<span class="input-group-addon"><div class="glyphicon glyphicon-user"></div></span>
+								<input class="form-control" id="username"
+									name="username" type="text" readonly="readonly"
+									ng-model="usersecureinfo.username" capitalizeFirst>
+							</div></td>
+					</tr>
+					<tr>
+						<td><div class="form-group input-group">
+						<span class="input-group-addon"><div class="glyphicon glyphicon-lock"></div></span>
+								<input class="form-control" id="password" name="password"
+									type="password" placeholder="Password"
+									ng-model="usersecureinfo.password">
+							</div></td>
+					</tr>
+					<tr>
+						<td><div class="form-group input-group">
+						<span class="input-group-addon"><div class="glyphicon glyphicon-lock"></div></span>
+								<input class="form-control" id="passwordConfirm"
+									name="passwordConfirm" type="password"
+									placeholder="ReEnter Password"
+									ng-model="usersecureinfo.passwordConfirm">
+							</div></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div align="center">
+														<button type="submit"  class="btn btn-success"><i class="fa fa-user fa-fw"></i> Update User Password</button>
+
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+
+
+</div>
